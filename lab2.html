@@ -1,0 +1,70 @@
+<<<<<<< HEAD
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+=======
+<!DOCTYPE html>
+<html>
+>>>>>>> 66951d8ff5bfb9d7ec0845ab48b46d8bd40c0153
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+    </style>
+    <script type="text/javascript"
+<<<<<<< HEAD
+      src="https://maps.googleapis.com/maps/api/js?&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+		  var myLatlng = new google.maps.LatLng(36.08, -115.17);
+        var mapOptions = {
+          center: myLatlng,
+          zoom: 8
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+			
+			var marker = new google.maps.Marker({
+				position: myLatlng,
+				map: map,
+				title: 'Hello World',
+				icon: 'bigcity.png'
+			});
+=======
+      src="https://maps.googleapis.com/maps/api/js?sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+		var myLatlng = new google.maps.LatLng(36.08, -115.17);
+		  
+        var mapOptions = {
+          center: myLatlng,
+          zoom: 10
+        };
+		
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+			
+		var marker = new google.maps.Marker({
+      		position: myLatlng,
+      		map: map,
+      		title: 'Hello World!',
+			icon: 'bigcity.png'
+  		});
+	
+>>>>>>> 66951d8ff5bfb9d7ec0845ab48b46d8bd40c0153
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"/>
+  </body>
+<<<<<<< HEAD
+</html>
+=======
+</html>
+>>>>>>> 66951d8ff5bfb9d7ec0845ab48b46d8bd40c0153
